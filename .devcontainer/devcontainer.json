@@ -1,0 +1,38 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {}
+}{
+    "name": "YumochikhmerHub Workspace",
+    "image": "://microsoft.com",
+    "features": {},
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "sumneko.lua",
+                "luau-lang.luau-lsp",
+                "jerrygoxi.lucy",
+                "xaver.code-minify"
+            ],
+            "settings": {
+                "lua.runtime.version": "LuaJIT",
+                "lua.diagnostics.globals": [
+                    "game",
+                    "workspace",
+                    "script",
+                    "task",
+                    "Enum",
+                    "Vector3",
+                    "CFrame",
+                    "UDim2",
+                    "Color3",
+                    "Instance",
+                    "loadstring"
+                ],
+                "lua.format.enable": true,
+                "editor.tabSize": 4,
+                "editor.insertSpaces": true
+            }
+        }
+    },
+    "postCreateCommand": "echo 'YumochikhmerHub workspace environment configured successfully!'"
+}
